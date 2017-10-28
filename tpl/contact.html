@@ -1,0 +1,119 @@
+<!--header start-->
+<div ng-include="'incs/head.html'"></div>
+<!--header end-->
+
+<!--page title start-->
+<section class="page-title ptb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!--page title end-->
+
+
+<!-- contact-form-section -->
+<section class="section-padding">
+
+    <div class="container">
+
+        <div class="text-center mb-80">
+            <h2 class="section-title text-uppercase">Drop us a line</h2>
+            <p class="section-sub">Our support team is on standby to give you a wow experience.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <form name="contact-form" id="contactForm">
+
+                    <div class="alert alert-success alert-dismissable" ng-show="success" ng-bind-html="success">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    </div>
+                    <div class="alert alert-danger alert-dismissable" ng-show="error" ng-bind-html="error">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-field">
+                                <input type="text" name="name" class="validate" id="name" ng-model="lead.fullname">
+                                <label for="name">Full Name</label>
+                            </div>
+
+                        </div><!-- /.col-md-6 -->
+
+                        <div class="col-md-6">
+                            <div class="input-field">
+                                <label class="sr-only" for="email">Email</label>
+                                <input id="email" type="email" name="email" class="validate" ng-model="lead.email" >
+                                <label for="email" data-error="wrong" data-success="right">Email</label>
+                            </div>
+                        </div><!-- /.col-md-6 -->
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-field">
+                                <input id="phone" type="tel" name="phone" class="validate" ng-model="lead.phone" >
+                                <label for="phone">Phone Number</label>
+                            </div>
+                        </div><!-- /.col-md-6 -->
+
+                        <div class="col-md-6">
+                            <div class="input-field">
+                                <input id="website" type="text" name="website" class="validate" ng-model="lead.website" >
+                                <label for="website">Your Website</label>
+                            </div>
+                        </div><!-- /.col-md-6 -->
+                    </div><!-- /.row -->
+
+                    <div class="input-field">
+                        <textarea name="message" id="message" class="materialize-textarea" ng-model="lead.message" ></textarea>
+                        <label for="message">Message</label>
+                    </div>
+
+                    <button type="submit" name="submit" class="waves-effect waves-light btn submit-button pink mt-30" ng-click="vm.addCon()">Send Message</button>
+                </form>
+            </div><!-- /.col-md-8 -->
+
+            <div class="col-md-4 contact-info">
+
+                <address>
+                    <i class="material-icons brand-color">&#xE55F;</i>
+                    <div class="address">
+                        1, Iloro Street, By Commonwealth Court<br>
+                        Adoro roundabout, Ajah, Lagos
+
+                        <hr>
+
+
+                    </div>
+
+                    <i class="material-icons brand-color">&#xE61C;</i>
+                    <div class="phone">
+                        <p>Fax: (234) 803-335-18344<br>
+                            Phone: (234) 803-335-18344</p>
+                    </div>
+
+                    <i class="material-icons brand-color">&#xE0E1;</i>
+                    <div class="mail">
+                        <p><a href="mailto:#">info@prestige-ipc.com</a><br>
+                            <a href="#">www.prestige-ipc.com</a></p>
+                    </div>
+                </address>
+
+            </div><!-- /.col-md-4 -->
+        </div><!-- /.row -->
+    </div>
+</section>
+<!-- contact-form-section End -->
+
+
+<!-- map-section
+<div id="myMap" class="height-350"></div>
+<!-- /.map-section -->
+
+
+
